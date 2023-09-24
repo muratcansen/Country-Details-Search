@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Loading Uygulama</title>
+</head>
+<body class="bg-black">
+
+    <div class="container my-5">
+        <div id="errors">
+
+        </div>
+        <div class="card mb-3 bg-black">
+            <div class="card-body">
+                <div class="input-group" >
+                    <input id="natSearch" type="text" class="form-control bg-black text-white" placeholder="Ülke İsmi Giriniz">
+                    <button id="btnSearch" type="button" class="btn btn-outline-info">Yükle</button>
+                    <button id="btnLocation" type="button" class="btn btn-outline-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="loading-iconn">
+            <div id="loading" class="loader" >
+                <div class="face">
+                    <div class="circle"></div>
+                </div>
+                <div class="face">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <div id="details">
+            <div class="card mb-3">
+                <div class="card-header text-white" style="background-color: rgb(27, 155, 240);">Arama Sonucu</div>
+                <div class="card-body text-white" style="background-color: rgb(27, 155, 240);">
+                    <div class="row" id="country-details">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card mg-3">
+                <div class="card-header text-white" style="background-color: rgb(27, 155, 240);">Komşu Ülkeler</div>
+                <div class="card-body text-white" style="background-color: rgb(27, 155, 240);">
+                    <div class="row text-white" style="background-color: rgb(27, 155, 240);" id="neighbors">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
